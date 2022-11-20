@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/whitecmile/Desktop/project/src/main.cpp" "/home/whitecmile/Desktop/project/build/CMakeFiles/minivim.dir/src/main.cpp.o"
+  "/home/whitecmile/Desktop/Project/src/main.cpp" "/home/whitecmile/Desktop/Project/build/CMakeFiles/minivim.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

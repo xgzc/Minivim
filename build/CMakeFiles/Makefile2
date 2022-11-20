@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whitecmile/Desktop/project
+CMAKE_SOURCE_DIR = /home/whitecmile/Desktop/Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whitecmile/Desktop/project/build
+CMAKE_BINARY_DIR = /home/whitecmile/Desktop/Project/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/minivim.dir/clean
 CMakeFiles/minivim.dir/all:
 	$(MAKE) -f CMakeFiles/minivim.dir/build.make CMakeFiles/minivim.dir/depend
 	$(MAKE) -f CMakeFiles/minivim.dir/build.make CMakeFiles/minivim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/whitecmile/Desktop/project/build/CMakeFiles --progress-num=1,2 "Built target minivim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/whitecmile/Desktop/Project/build/CMakeFiles --progress-num=1,2 "Built target minivim"
 .PHONY : CMakeFiles/minivim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/minivim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whitecmile/Desktop/project/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whitecmile/Desktop/Project/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/minivim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whitecmile/Desktop/project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whitecmile/Desktop/Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/minivim.dir/rule
 
 # Convenience name for target.

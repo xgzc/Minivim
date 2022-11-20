@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/whitecmile/Desktop/project/src/main.cpp
+/home/whitecmile/Desktop/Project/src/main.cpp
 ncurses.h
 -
 fstream

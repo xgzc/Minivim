@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/whitecmile/Desktop/project/include 
+CXX_INCLUDES = -I/home/whitecmile/Desktop/Project/include 
 
