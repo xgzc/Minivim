@@ -88,16 +88,23 @@ namespace Screen_operations
         else
         {
             Line_Add_Char('\n'), cursor.y++;
-            if(cursor.y != line[cursor.x].size() - 1)
+            if(cursor.y != line[cursor.x].size())
             {
                 max_line_number++;
                 for(int i = max_line_number; i >= cursor.x + 2; i--) line[i] = line[i - 1];
                 line[cursor.x + 1].clear();
                 for(int i = cursor.y; i < line[cursor.x].size(); i++) line[cursor.x + 1].push_back(line[cursor.x][i]);
                 for(int i = line[cursor.x].size() - 1; i >= cursor.y; i--) line[cursor.x].pop_back();
-                cursor.x++, cursor.y = 0;
-                Print_To_Screen();
             }
+            else if(line[cursor.x].size() > 1 && line[cursor.x][cursor.y - 1] == '\n' && line[cursor.x][cursor.y - 2] == '\n')
+            {
+                max_line_number++;
+                for(int i = max_line_number; i >= cursor.x + 2; i--) line[i] = line[i - 1];
+                line[cursor.x + 1].clear(), line[cursor.x + 1].push_back('\n');
+                line[cursor.x].pop_back();
+            }
+            cursor.x++, cursor.y = 0;
+            Print_To_Screen();
             max_line_number = std :: max(max_line_number, cursor.x);
             if(Check_Cursor()) Update_Cursor_Position();
         }
