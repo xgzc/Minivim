@@ -1,0 +1,3 @@
+/home/whitecmile/Desktop/project/build/CMakeFiles/rebuild_cache.dir
+/home/whitecmile/Desktop/project/build/CMakeFiles/edit_cache.dir
+/home/whitecmile/Desktop/project/build/CMakeFiles/minivim.dir
