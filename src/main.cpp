@@ -63,7 +63,7 @@ namespace Screen_operations
         for(int i = line[cursor.x].size() - 1; i > cursor.y; i--) line[cursor.x][i] = line[cursor.x][i - 1];
         line[cursor.x][cursor.y] = ch;
         wmove(win, cursor.x - line_up_limit, 0);
-        for(auto c : line[cursor.x]) wprintw(win, "%c", c);
+        for(int i = column_left_limit; i <= std :: min(column_right_limit, (int) line[cursor.x].size() - 1); i++) wprintw(win, "%c", line[cursor.x][i]);
     }
     void Line_Delete_Char()
     {
@@ -97,7 +97,7 @@ namespace Screen_operations
                 for(int i = line[cursor.x].size() - 1; i >= cursor.y; i--) line[cursor.x].pop_back();
             }
             else if(line[cursor.x].size() > 1 && line[cursor.x][cursor.y - 1] == '\n' && line[cursor.x][cursor.y - 2] == '\n')
-            {
+            {   
                 max_line_number++;
                 for(int i = max_line_number; i >= cursor.x + 2; i--) line[i] = line[i - 1];
                 line[cursor.x + 1].clear(), line[cursor.x + 1].push_back('\n');
